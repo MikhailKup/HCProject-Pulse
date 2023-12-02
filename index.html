@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>RunSmart</title>
+   <link rel="stylesheet" href="./css/style.css">
+   <link rel="stylesheet" href="./css/animate.css">
+   <link rel='shortcut icon' href='./icons/favicon.ico' type='image/x-icon'>
+   <style>
+      @import url('https://fonts.googleapis.com/css2?family=MuseoModerno:wght@300;400;500;700;900&display=swap');
+   </style>
+</head>
+
+<body>
+   <section class="promo" id="up">
+      <div class="container">
+         <div class="promo__header header-promo animate__fadeInDown animate__animated wow">
+            <div class="header-promo__logo">
+               <img src="./img/header-logo.png" alt="header-logo">
+            </div>
+            <div class="header-promo__text">
+               <p>Официальный представитель</p>
+               <p>Garmin, Polar, Suunto</p>
+            </div>
+            <div class="header-promo__contacts">
+               <div class="header-promo__tel">+7 (499) 922-89-74</div>
+               <div data-modal="consultation" class="header-promo__btn button">заказать звонок</div>
+            </div>
+         </div>
+         <div class="promo__body animate__fadeInRight animate__animated wow">
+            <h2>Подбор пульсометра</h2>
+            <h3>с учётом Вашего уровня подготовки</h3>
+            <div class="promo__row">
+               <div class="promo__item">
+                  <div class="promo__icon">
+                     <img src="./icons/promo-icon_1.png" alt="promo-icon_1">
+                  </div>
+                  <div class="promo__descr">Время подбора:<br>10 минут</div>
+               </div>
+               <div class="promo__item">
+                  <div class="promo__icon">
+                     <img src="./icons/promo-icon_2.png" alt="promo-icon_2">
+                  </div>
+                  <div class="promo__descr">Бесплатная<br> доставка</div>
+               </div>
+               <div class="promo__item">
+                  <div class="promo__icon">
+                     <img src="./icons/promo-icon_3.png" alt="promo-icon_3">
+                  </div>
+                  <div class="promo__descr">Ответим<br> на все вопросы</div>
+               </div>
+            </div>
+            <div data-modal="consultation" class="promo__btn button">заказать кОНСУЛЬТАЦИЮ</div>
+            <div class="promo__link">или <a href="#">ПЕРЕЙТИ В КАТАЛОГ</a></div>
+         </div>
+      </div>
+   </section>
+
+   <section class="features">
+      <div class="container">
+         <h2 class="features__title title">НАШИ ПРЕИМУЩЕСТВА</h2>
+         <div class="features__row animate__fadeInUp animate__animated wow">
+            <!-- <div class="features__item item-features">
+               <div class="item-features__icon">
+                  <img src="./icons/features/features-icon_1.png" alt="features-icon_1">
+               </div>
+               <div class="item-features__title">Делимся опытом</div>
+               <div class="item-features__text">Наши сотрудники всегда готовы поделиться своим опытом, так как сами
+                  бегают полумарафоны, переплыли Босфор, готовятся к соревнованиям по триатлону!</div>
+            </div> -->
+            <!-- <div class="features__item item-features">
+               <div class="item-features__icon">
+                  <img src="./icons/features/features-icon_2.png" alt="features-icon_2">
+               </div>
+               <div class="item-features__title">Заботимся о здоровье</div>
+               <div class="item-features__text">Мы работаем для того, чтобы Ваши занятия спортом шли на пользу Вашему
+                  здоровью и были в радость Вам и Вашим близким!</div>
+            </div> -->
+            <!-- <div class="features__item item-features">
+					<div class="item-features__icon">
+						<img src="./icons/features/features-icon_3.png" alt="features-icon_3">
+					</div>
+					<div class="item-features__title">Учим бегать</div>
+					<div class="item-features__text">Помогаем с обучением правильной технике бега! Дружим с крупнейшей школой
+						бега в России - <a href="#">I LOVE RUNNING.</a></div>
+				</div> -->
+         </div>
+      </div>
+   </section>
+
+   <section class="form">
+      <div class="container">
+         <h2 class="form__title">
+            Получите бесплатную консультацию<br>
+            по подбору пульсометра
+         </h2>
+         <div class="form__descr">
+            <p>Просто заполните форму заявки</p>
+            <p>и мы перезвоним вам в течении 10 минут</p>
+         </div>
+         <form action="#" method="post" class="form__forms" id="consultation-form">
+            <input type="text" class="form__input" name="name" placeholder="Ваше имя" required maxlength="10">
+            <input type="tel" class="form__input" name="telephone" placeholder="Ваш телефон" required>
+            <input type="email" class="form__input" name="email" placeholder="Ваш E-mail" required>
+            <button class="form__btn button">заказать кОНСУЛЬТАЦИЮ</button>
+         </form>
+      </div>
+   </section>
+
+   <div class="slider">
+      <div class="container">
+         <div class="slider__inner">
+            <div class="slider__slide">
+               <img src="./img/Catalog-slide_1.jpg" alt="">
+            </div>
+            <div class="slider__slide">
+               <img src="./img/Catalog-slide_2.jpg" alt="">
+            </div>
+            <div class="slider__slide">
+               <img src="./img/Catalog-slide_3.jpg" alt="">
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <section class="catalog">
+      <div class="container">
+         <h2 class="catalog__title title animate__bounce animate__animated wow">Каталог пульсометров</h2>
+         <ul class="catalog__tabs">
+            <li class="catalog__tab catalog__tab_active"><span>Для фитнеса</span></li>
+            <li class="catalog__tab"><span>для бега</span></li>
+            <li class="catalog__tab"><span>для триатлона</span></li>
+         </ul>
+         <div class="catalog__row catalog__row_active">
+            <div class="catalog__column">
+               <div class="catalog__item item-catalog">
+                  <div class="item-catalog__wrapper">
+                     <div class="item-catalog__top item-catalog__top_active">
+                        <div class="item-catalog__image">
+                           <img src="./img/catalog-item_01.jpg" alt="catalog-item">
+                        </div>
+                        <div class="item-catalog__title">Polar Grit X Pro</div>
+                        <div class="item-catalog__descr">Часы премиум-класса для спорта на открытом воздухе
+                        </div>
+                        <a href="" class="item-catalog__link">ПОДРОБНЕЕ</a>
+                     </div>
+                     <div class="item-catalog__about">
+                        <ul class="item-catalog__list">
+                           <li>Прочность на уровне военных стандартов и сапфировое стекло</li>
+                           <li>Сверхдлительное время работы от аккумулятора</li>
+                           <li>Непревзойденное оптическое отслеживание ЧСС и точность GPS-данных</li>
+                           <li>Пошаговая навигация с помощью Komoot</li>
+                        </ul>
+                        <a href="" class="item-catalog__back">НАЗАД</a>
+                     </div>
+                  </div>
+                  <div class="item-catalog__bottom">
+                     <div class="item-catalog__prices">
+                        <div class="item-catalog__oldprice">47 500 руб.</div>
+                        <div class="item-catalog__newprice">41 500 руб.</div>
+                     </div>
+                     <div data-modal="order" class="item-catalog__btn button">КУПИТЬ</div>
+                  </div>
+               </div>
+            </div>
+            <div class="catalog__column">
+               <div class="catalog__item item-catalog">
+                  <div class="item-catalog__wrapper">
+                     <div class="item-catalog__top item-catalog__top_active">
+                        <div class="item-catalog__image">
+                           <img src="./img/catalog-item_02.jpg" alt="catalog-item">
+                        </div>
+                        <div class="item-catalog__title">Polar Vantage V2</div>
+                        <div class="item-catalog__descr">Спортивные часы премиум-класса для мультиспорта
+                        </div>
+                        <a href="" class="item-catalog__link">ПОДРОБНЕЕ</a>
+                     </div>
+                     <div class="item-catalog__about">
+                        <ul class="item-catalog__list">
+                           <li>Материалы премиум-класса и облегченный дизайн</li>
+                           <li>Сверхдлительное время работы от аккумулятора</li>
+                           <li>Непревзойденное оптическое отслеживание ЧСС и точность GPS-данных</li>
+                           <li>Training Load Pro™ и Recovery Pro™</li>
+                        </ul>
+                        <a href="" class="item-catalog__back">НАЗАД</a>
+                     </div>
+                  </div>
+                  <div class="item-catalog__bottom">
+                     <div class="item-catalog__prices">
+                        <div class="item-catalog__oldprice">62 990 руб.</div>
+                        <div class="item-catalog__newprice">52 990 руб.</div>
+                     </div>
+                     <div data-modal="order" class="item-catalog__btn button">КУПИТЬ</div>
+                  </div>
+               </div>
+            </div>
+            <div class="catalog__column">
+               <div class="catalog__item item-catalog">
+                  <div class="item-catalog__wrapper">
+                     <div class="item-catalog__top item-catalog__top_active">
+                        <div class="item-catalog__image">
+                           <img src="./img/catalog-item_03.jpg" alt="catalog-item">
+                        </div>
+                        <div class="item-catalog__title">Polar Grit X</div>
+                        <div class="item-catalog__descr">Часы для спорта на открытом воздухе
+                        </div>
+                        <a href="" class="item-catalog__link">ПОДРОБНЕЕ</a>
+                     </div>
+                     <div class="item-catalog__about">
+                        <ul class="item-catalog__list">
+                           <li>Подробная статистика по подъемам и спускам с функцией Hill Splitter™</li>
+                           <li>Планирование маршрутов с помощью Komoot</li>
+                           <li>Смарт-функция пополнения энергии FuelWise™</li>
+                           <li>Nightly Recharge™: показатель восстановления</li>
+                        </ul>
+                        <a href="" class="item-catalog__back">НАЗАД</a>
+                     </div>
+                  </div>
+                  <div class="item-catalog__bottom">
+                     <div class="item-catalog__prices">
+                        <div class="item-catalog__oldprice">46 990 руб.</div>
+                        <div class="item-catalog__newprice">53 990 руб.</div>
+                     </div>
+                     <div data-modal="order" class="item-catalog__btn button">КУПИТЬ</div>
+                  </div>
+               </div>
+            </div>
+            <div class="catalog__column">
+               <div class="catalog__item item-catalog">
+                  <div class="item-catalog__wrapper">
+                     <div class="item-catalog__top item-catalog__top_active">
+                        <div class="item-catalog__image">
+                           <img src="./img/catalog-item_08.jpg" alt="catalog-item">
+                        </div>
+                        <div class="item-catalog__title">Polar Vantage M2</div>
+                        <div class="item-catalog__descr">Часы для мультиспорта
+                        </div>
+                        <a href="" class="item-catalog__link">ПОДРОБНЕЕ</a>
+                     </div>
+                     <div class="item-catalog__about">
+                        <ul class="item-catalog__list">
+                           <li>Разработано для настоящих любителей спорта</li>
+                           <li>Nightly Recharge™: показатель восстановления</li>
+                           <li>Управление музыкой и другие функции умных часов</li>
+                        </ul>
+                        <a href="" class="item-catalog__back">НАЗАД</a>
+                     </div>
+                  </div>
+                  <div class="item-catalog__bottom">
+                     <div class="item-catalog__prices">
+                        <div class="item-catalog__oldprice">41 990 руб.</div>
+                        <div class="item-catalog__newprice">37 990 руб.</div>
+                     </div>
+                     <div data-modal="order" class="item-catalog__btn button">КУПИТЬ</div>
+                  </div>
+               </div>
+            </div>
+            <div class="catalog__column">
+               <div class="catalog__item item-catalog">
+                  <div class="item-catalog__wrapper">
+                     <div class="item-catalog__top item-catalog__top_active">
+                        <div class="item-catalog__image">
+                           <img src="./img/catalog-item_06.jpg" alt="catalog-item">
+                        </div>
+                        <div class="item-catalog__title">Polar Ignite</div>
+                        <div class="item-catalog__descr">Фитнес-часы
+                        </div>
+                        <a href="" class="item-catalog__link">ПОДРОБНЕЕ</a>
+                     </div>
+                     <div class="item-catalog__about">
+                        <ul class="item-catalog__list">
+                           <li>Встроенный датчик GPS</li>
+                           <li>Новейший пульсометр на запястье</li>
+                           <li>Nightly Recharge™: показатель восстановлени</li>
+                        </ul>
+                        <a href="" class="item-catalog__back">НАЗАД</a>
+                     </div>
+                  </div>
+                  <div class="item-catalog__bottom">
+                     <div class="item-catalog__prices">
+                        <div class="item-catalog__oldprice">29 990 руб.</div>
+                        <div class="item-catalog__newprice">24 990 руб.</div>
+                     </div>
+                     <div data-modal="order" class="item-catalog__btn button">КУПИТЬ</div>
+                  </div>
+               </div>
+            </div>
+            <div class="catalog__column">
+               <div class="catalog__item item-catalog">
+                  <div class="item-catalog__wrapper">
+                     <div class="item-catalog__top item-catalog__top_active">
+                        <div class="item-catalog__image">
+                           <img src="./img/catalog-item_05.jpg" alt="catalog-item">
+                        </div>
+                        <div class="item-catalog__title">Polar A370</div>
+                        <div class="item-catalog__descr">Фитнес-трекер
+                        </div>
+                        <a href="" class="item-catalog__link">ПОДРОБНЕЕ</a>
+                     </div>
+                     <div class="item-catalog__about">
+                        <ul class="item-catalog__list">
+                           <li>Непрерывное измерение сердечного ритма</li>
+                           <li>Отслеживание сна с помощью Polar Sleep Plus</li>
+                           <li>GPS по телефону</li>
+                        </ul>
+                        <a href="" class="item-catalog__back">НАЗАД</a>
+                     </div>
+                  </div>
+                  <div class="item-catalog__bottom">
+                     <div class="item-catalog__prices">
+                        <div class="item-catalog__oldprice">9 990 руб.</div>
+                        <div class="item-catalog__newprice">12 990 руб.</div>
+                     </div>
+                     <div data-modal="order" class="item-catalog__btn button">КУПИТЬ</div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="catalog__row">
+            <div class="catalog__column">
+               <div class="catalog__item item-catalog">
+                  <div class="item-catalog__wrapper">
+                     <div class="item-catalog__top item-catalog__top_active">
+                        <div class="item-catalog__image">
+                           <img src="./img/catalog-item_04.jpg" alt="catalog-item">
+                        </div>
+                        <div class="item-catalog__title">Polar Unite</div>
+                        <div class="item-catalog__descr">Фитнес-трекер
+                        </div>
+                        <a href="" class="item-catalog__link">ПОДРОБНЕЕ</a>
+                     </div>
+                     <div class="item-catalog__about">
+                        <ul class="item-catalog__list">
+                           <li>Отслеживание активности и ЧСС в течение суток</li>
+                           <li>Персональные инструкции по ежедневным тренировкам</li>
+                           <li>Приложения для автоматического контроля сна и восстановления</li>
+                        </ul>
+                        <a href="" class="item-catalog__back">НАЗАД</a>
+                     </div>
+                  </div>
+                  <div class="item-catalog__bottom">
+                     <div class="item-catalog__prices">
+                        <div class="item-catalog__oldprice">18 990 руб.</div>
+                        <div class="item-catalog__newprice">15 990 руб.</div>
+                     </div>
+                     <div data-modal="order" class="item-catalog__btn button">КУПИТЬ</div>
+                  </div>
+               </div>
+            </div>
+            <div class="catalog__column">
+               <div class="catalog__item item-catalog">
+                  <div class="item-catalog__wrapper">
+                     <div class="item-catalog__top item-catalog__top_active">
+                        <div class="item-catalog__image">
+                           <img src="./img/catalog-item_05.jpg" alt="catalog-item">
+                        </div>
+                        <div class="item-catalog__title">Polar A370</div>
+                        <div class="item-catalog__descr">Фитнес-трекер
+                        </div>
+                        <a href="" class="item-catalog__link">ПОДРОБНЕЕ</a>
+                     </div>
+                     <div class="item-catalog__about">
+                        <ul class="item-catalog__list">
+                           <li>Непрерывное измерение сердечного ритма</li>
+                           <li>Отслеживание сна с помощью Polar Sleep Plus</li>
+                           <li>GPS по телефону</li>
+                        </ul>
+                        <a href="" class="item-catalog__back">НАЗАД</a>
+                     </div>
+                  </div>
+                  <div class="item-catalog__bottom">
+                     <div class="item-catalog__prices">
+                        <div class="item-catalog__oldprice">9 990 руб.</div>
+                        <div class="item-catalog__newprice">12 990 руб.</div>
+                     </div>
+                     <div data-modal="order" class="item-catalog__btn button">КУПИТЬ</div>
+                  </div>
+               </div>
+            </div>
+            <div class="catalog__column">
+               <div class="catalog__item item-catalog">
+                  <div class="item-catalog__wrapper">
+                     <div class="item-catalog__top item-catalog__top_active">
+                        <div class="item-catalog__image">
+                           <img src="./img/catalog-item_08.jpg" alt="catalog-item">
+                        </div>
+                        <div class="item-catalog__title">Polar Vantage M2</div>
+                        <div class="item-catalog__descr">Часы для мультиспорта
+                        </div>
+                        <a href="" class="item-catalog__link">ПОДРОБНЕЕ</a>
+                     </div>
+                     <div class="item-catalog__about">
+                        <ul class="item-catalog__list">
+                           <li>Разработано для настоящих любителей спорта</li>
+                           <li>Nightly Recharge™: показатель восстановления</li>
+                           <li>Управление музыкой и другие функции умных часов</li>
+                        </ul>
+                        <a href="" class="item-catalog__back">НАЗАД</a>
+                     </div>
+                  </div>
+                  <div class="item-catalog__bottom">
+                     <div class="item-catalog__prices">
+                        <div class="item-catalog__oldprice">41 990 руб.</div>
+                        <div class="item-catalog__newprice">37 990 руб.</div>
+                     </div>
+                     <div data-modal="order" class="item-catalog__btn button">КУПИТЬ</div>
+                  </div>
+               </div>
+            </div>
+            <div class="catalog__column">
+               <div class="catalog__item item-catalog">
+                  <div class="item-catalog__wrapper">
+                     <div class="item-catalog__top item-catalog__top_active">
+                        <div class="item-catalog__image">
+                           <img src="./img/catalog-item_07.jpg" alt="catalog-item">
+                        </div>
+                        <div class="item-catalog__title">Polar Ignite 2</div>
+                        <div class="item-catalog__descr">Фитнес-часы
+                        </div>
+                        <a href="" class="item-catalog__link">ПОДРОБНЕЕ</a>
+                     </div>
+                     <div class="item-catalog__about">
+                        <ul class="item-catalog__list">
+                           <li>Встроенный датчик GPS</li>
+                           <li>Nightly Recharge™: показатель восстановления</li>
+                           <li>Персонализируйте с помощью браслетов</li>
+                           <li>Управление музыкой</li>
+                        </ul>
+                        <a href="" class="item-catalog__back">НАЗАД</a>
+                     </div>
+                  </div>
+                  <div class="item-catalog__bottom">
+                     <div class="item-catalog__prices">
+                        <div class="item-catalog__oldprice">32 990 руб.</div>
+                        <div class="item-catalog__newprice">28 990 руб.</div>
+                     </div>
+                     <div data-modal="order" class="item-catalog__btn button">КУПИТЬ</div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="catalog__row">
+            <div class="catalog__column">
+               <div class="catalog__item item-catalog">
+                  <div class="item-catalog__wrapper">
+                     <div class="item-catalog__top item-catalog__top_active">
+                        <div class="item-catalog__image">
+                           <img src="./img/catalog-item_06.jpg" alt="catalog-item">
+                        </div>
+                        <div class="item-catalog__title">Polar Ignite</div>
+                        <div class="item-catalog__descr">Фитнес-часы
+                        </div>
+                        <a href="" class="item-catalog__link">ПОДРОБНЕЕ</a>
+                     </div>
+                     <div class="item-catalog__about">
+                        <ul class="item-catalog__list">
+                           <li>Встроенный датчик GPS</li>
+                           <li>Новейший пульсометр на запястье</li>
+                           <li>Nightly Recharge™: показатель восстановлени</li>
+                        </ul>
+                        <a href="" class="item-catalog__back">НАЗАД</a>
+                     </div>
+                  </div>
+                  <div class="item-catalog__bottom">
+                     <div class="item-catalog__prices">
+                        <div class="item-catalog__oldprice">29 990 руб.</div>
+                        <div class="item-catalog__newprice">24 990 руб.</div>
+                     </div>
+                     <div data-modal="order" class="item-catalog__btn button">КУПИТЬ</div>
+                  </div>
+               </div>
+            </div>
+            <div class="catalog__column">
+               <div class="catalog__item item-catalog">
+                  <div class="item-catalog__wrapper">
+                     <div class="item-catalog__top item-catalog__top_active">
+                        <div class="item-catalog__image">
+                           <img src="./img/catalog-item_07.jpg" alt="catalog-item">
+                        </div>
+                        <div class="item-catalog__title">Polar Ignite 2</div>
+                        <div class="item-catalog__descr">Фитнес-часы
+                        </div>
+                        <a href="" class="item-catalog__link">ПОДРОБНЕЕ</a>
+                     </div>
+                     <div class="item-catalog__about">
+                        <ul class="item-catalog__list">
+                           <li>Встроенный датчик GPS</li>
+                           <li>Nightly Recharge™: показатель восстановления</li>
+                           <li>Персонализируйте с помощью браслетов</li>
+                           <li>Управление музыкой</li>
+                        </ul>
+                        <a href="" class="item-catalog__back">НАЗАД</a>
+                     </div>
+                  </div>
+                  <div class="item-catalog__bottom">
+                     <div class="item-catalog__prices">
+                        <div class="item-catalog__oldprice">32 990 руб.</div>
+                        <div class="item-catalog__newprice">28 990 руб.</div>
+                     </div>
+                     <div data-modal="order" class="item-catalog__btn button">КУПИТЬ</div>
+                  </div>
+               </div>
+            </div>
+            <div class="catalog__column">
+               <div class="catalog__item item-catalog">
+                  <div class="item-catalog__wrapper">
+                     <div class="item-catalog__top item-catalog__top_active">
+                        <div class="item-catalog__image">
+                           <img src="./img/catalog-item_02.jpg" alt="catalog-item">
+                        </div>
+                        <div class="item-catalog__title">Polar Vantage V2</div>
+                        <div class="item-catalog__descr">Спортивные часы премиум-класса для мультиспорта
+                        </div>
+                        <a href="" class="item-catalog__link">ПОДРОБНЕЕ</a>
+                     </div>
+                     <div class="item-catalog__about">
+                        <ul class="item-catalog__list">
+                           <li>Материалы премиум-класса и облегченный дизайн</li>
+                           <li>Сверхдлительное время работы от аккумулятора</li>
+                           <li>Непревзойденное оптическое отслеживание ЧСС и точность GPS-данных</li>
+                           <li>Training Load Pro™ и Recovery Pro™</li>
+                        </ul>
+                        <a href="" class="item-catalog__back">НАЗАД</a>
+                     </div>
+                  </div>
+                  <div class="item-catalog__bottom">
+                     <div class="item-catalog__prices">
+                        <div class="item-catalog__oldprice">62 990 руб.</div>
+                        <div class="item-catalog__newprice">52 990 руб.</div>
+                     </div>
+                     <div data-modal="order" class="item-catalog__btn button">КУПИТЬ</div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <section class="feedback">
+      <div class="container">
+         <h2 class="feedback__title title">отзывы клиентов</h2>
+         <div class="feedback__row animate__fadeInRightBig animate__animated wow" data-wow-duration="2s">
+            <!-- <div class="feedback__item item-feedback">
+				<div class="item-feedback__image">
+					<img src="./img/review_1.jpg" alt="review_1">
+				</div>
+				<div class="item-feedback__body">
+					<div class="item-feedback__name">Ирина Иванченко </div>
+					<div class="item-feedback__sub">2 полумарафона</div>
+					<div class="item-feedback__text">
+						<p>Не знала, что себе купить - обратилась к ребятам из RunSmart - подобрали пульсометр, который
+							подошёл именно под мои цели и финансовые возможности. Через некоторое время решила обновить
+							гаджет
+							- не раздумывая обратилась туда же.</p>
+						<p>Новые цели - новый гаджет!</p>
+						<p>Спасибо, RunSmart!</p>
+					</div>
+				</div>
+			</div> -->
+            <!-- <div class="feedback__item item-feedback">
+				<div class="item-feedback__image">
+					<img src="./img/review_2.jpg" alt="review_2">
+				</div>
+				<div class="item-feedback__body">
+					<div class="item-feedback__name">Иван Сёмочкин</div>
+					<div class="item-feedback__sub">1 полумарафон</div>
+					<div class="item-feedback__text">
+						<p>Крутая штука-пульсометр. Обычно без них бегал. Оказывается только хуже себе делал. <br>Купил
+							пульсометр, ещё в подарок получил тренировку. Со мной вместе провели первую тренировку, научили
+							пользоваться новым гаджетом. Также объяснили основы анатомии, составили план тренировок на месяц
+							вперёд.</p>
+						<p>С ними подготовился к своему первому полумарафону! Спасибо!!!</p>
+					</div>
+				</div>
+			</div> -->
+            <!-- <div class="feedback__item item-feedback">
+					<div class="item-feedback__image">
+						<img src="./img/review_3.jpg" alt="review_3">
+					</div>
+					<div class="item-feedback__body">
+						<div class="item-feedback__name">Юлия Дашкина</div>
+						<div class="item-feedback__sub">2 полумарафона</div>
+						<div class="item-feedback__text">
+							<p>Долго не могла начать бегать, т.к. до этого несколько раз начинала, но становилось тяжело и я
+								бросала. От друзей услышала о RunSmart и о беге с контролем пульса и решила
+								попробовать.</p>
+							<p>Позвонила, ребята поинтересовались моими целями и подобрали очень интересный вариант
+								со скидкой! Теперь бегаю и наслаждаюсь бегом! Пробежала уже 2 полумарафона и несколько более
+								коротких забегов и не намерена останавливаться!</p>
+							<p>Спасибо!!!</p>
+						</div>
+					</div>
+				</div> -->
+         </div>
+      </div>
+   </section>
+
+   <div class="footer">
+      <iframe
+         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2244.4303074593977!2d37.64480731607087!3d55.76839799825633!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54a636edcd2ad%3A0x4c2ca101e2c8c617!2z0JzRj9GB0L3QuNGG0LrQuNC5INC_0YAt0LQsIDQvMywg0JzQvtGB0LrQstCwLCAxMDcwNzg!5e0!3m2!1sru!2sru!4v1649402832305!5m2!1sru!2sru"
+         width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+         referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <div class="footer__contacts">
+         <div class="footer__adress">Москва, Мясницкий проезд, д.3с1</div>
+         <div class="footer__telephone">8 (499) 922-89-74</div>
+         <div class="footer__social">
+            <div class="footer__item">
+               <img src="./icons/social/facebook.svg" alt="facebook">
+            </div>
+            <div class="footer__item">
+               <img src="./icons/social/instagram-w.svg" alt="instagram">
+            </div>
+            <div class="footer__item">
+               <img src="./icons/social/pinterest.svg" alt="pinterest">
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <div class="overlay">
+      <div class="modal" id="consultation">
+         <div class="modal__close">&times;</div>
+         <div class="modal__title">Просто заполните форму заявки</div>
+         <div class="modal__descr">и мы перезвоним вам в течении 10 минут</div>
+         <form action="#" method="post" class="form__forms">
+            <input type="text" class="form__input" name="name" placeholder="Ваше имя" required maxlength="10">
+            <input type="tel" class="form__input" name="telephone" placeholder="Ваш телефон" required>
+            <input type="email" class="form__input" name="email" placeholder="Ваш E-mail" required>
+            <button class="form__btn button">заказать консультацию</button>
+         </form>
+      </div>
+      <div class="modal" id="order">
+         <div class="modal__close">&times;</div>
+         <div class="modal__title">Ваш заказ:</div>
+         <div class="modal__descr">Часы Polar Grit X Pro</div>
+         <form action="#" method="post" class="form__forms">
+            <input type="text" class="form__input" name="name" placeholder="Ваше имя" required maxlength="10">
+            <input type="tel" class="form__input" name="telephone" placeholder="Ваш телефон" required>
+            <input type="email" class="form__input" name="email" placeholder="Ваш E-mail" required>
+            <button class="form__btn button">Купить</button>
+         </form>
+      </div>
+      <div class="modal modal_mini" id="thanks">
+         <div class="modal__close">&times;</div>
+         <div class="modal__title">Спасибо за вашу заявку!</div>
+         <div class="modal__descr">Наш менеджер свяжется с вами в ближайшее время!</div>
+      </div>
+   </div>
+
+   <a href="#up" class="pageup">
+      <img src="./icons/up-arrow.svg" alt="up-arrow">
+   </a>
+
+   <!-- Подключаем Javascript -->
+   <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+   <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+   <script src="./js/slick.min.js"></script>
+   <script src="./js/jquery.validate.min.js"></script>
+   <script src="./js/jquery.maskedinput.min.js"></script>
+   <script src="./js/wow.min.js"></script>
+   <script src="./js/script.js"></script>
+</body>
+
+</html>
